@@ -5,8 +5,6 @@ Version:	0.3
 Release:	3
 License:	GPL
 Group:		X11/Window Managers/Tools
-Group(de):	X11/Fenstermanager/Werkzeuge
-Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
 Source0:	ftp://ftp.windowmaker.org/pub/contrib/srcs/games/%{name}-%{version}-1.tar.gz
 Source1:	%{name}.desktop
 BuildRequires:	XFree86-devel
