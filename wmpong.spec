@@ -1,25 +1,26 @@
 Summary:	Self playing pong game for WindowMaker Dock
-Summary(pl):	Samograj±cy siê ping pong dla Doku WindowMakera
+Summary(pl):	Graj±cy sam ze sob± ping pong dla Doku WindowMakera
 Name:		wmpong
-Version: 	0.3
+Version:	0.3
 Release:	2
-Copyright:	GPL
+License:	GPL
 Group:		X11/Window Managers/Tools
+Group(de):	X11/Fenstermanager/Werkzeuge
 Group(pl):	X11/Zarz±dcy Okien/Narzêdzia
-Source0:	%{name}-%{version}-1.tar.gz
-Source1:	wmpong.desktop
+Source0:	ftp://ftp.windowmaker.org/pub/contrib/srcs/games/%{name}-%{version}-1.tar.gz
+Source1:	%{name}.desktop
 BuildRequires:	XFree86-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
 
 %description
-It's completely useless except for brainless entertainment value. 
-It's a self playing pong game for WindowMaker Dock.
+It's completely useless except for brainless entertainment value. It's
+a self playing pong game for WindowMaker Dock.
 
 %description -l pl
 Program ten jest ca³kowicie bezu¿yteczny. Przeznaczony dla Doku
-WindowMakera, graj±cy siê sam ping-pong.
+WindowMakera, graj±cy sam ze sob± ping-pong.
 
 %prep
 %setup -q -n %{name}.app
