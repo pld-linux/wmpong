@@ -26,7 +26,7 @@ WindowMakera, graj±cy siê sam ping-pong.
 %setup -q -n %{name}.app
 
 %build
-make -C %{name} 
+%{__make} -C %{name} 
 
 %install
 rm -rf $RPM_BUILD_ROOT
