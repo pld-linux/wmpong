@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=wmpong
+Name=WmPong
 Comment=Self playing pong game
 Comment[pl]=Grający się sam ping-pong
 Exec=wmpong
