@@ -24,12 +24,12 @@ WindowMakera, graj±cy sam ze sob± ping-pong.
 %setup -q -n %{name}.app
 
 %build
-%{__make} -C %{name} 
+%{__make} -C %{name}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/DockApplets} 
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/DockApplets}
 
 install %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
 #install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
