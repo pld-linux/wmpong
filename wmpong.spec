@@ -13,6 +13,7 @@ BuildRequires:	xpm-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %define 	_prefix		/usr/X11R6
+%define		_applnkdir	%{_datadir}/applnk
 
 %description
 It's completely useless except for brainless entertainment value. 
@@ -32,9 +33,10 @@ make -C %{name}
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT{%{_bindir},/usr/X11R6/share/applnk/DockApplets} 
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/DockApplets} 
+
 install -s %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
-install %{SOURCE1} $RPM_BUILD_ROOT/usr/X11R6/share/applnk/DockApplets
+install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 gzip -9nf BUGS ChangeLog README TODO
 
@@ -46,4 +48,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc {BUGS,ChangeLog,README,TODO}.gz
 %attr(755,root,root) %{_bindir}/%{name}
 
-/usr/X11R6/share/applnk/DockApplets/wmpong.desktop
+%{_applnkdir}/DockApplets/wmpong.desktop
