@@ -12,7 +12,7 @@ BuildRequires:	XFree86-devel
 BuildRequires:	xpm-devel
 BuildRoot:	/tmp/%{name}-%{version}-root
 
-%define _prefix	/usr/X11R6
+%define 	_prefix		/usr/X11R6
 
 %description
 It's completely useless except for brainless entertainment value. 
