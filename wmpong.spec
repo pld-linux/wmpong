@@ -43,4 +43,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc BUGS ChangeLog README TODO
 %attr(755,root,root) %{_bindir}/%{name}
 
-#%{_applnkdir}/DockApplets/wmpong.desktop
+#%%{_applnkdir}/DockApplets/wmpong.desktop
