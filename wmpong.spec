@@ -10,15 +10,13 @@ Source0:	%{name}-%{version}-1.tar.gz
 Source1:	wmpong.desktop
 BuildRequires:	XFree86-devel
 BuildRequires:	xpm-devel
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define 	_prefix		/usr/X11R6
-%define		_applnkdir	%{_datadir}/applnk
 
 %description
 It's completely useless except for brainless entertainment value. 
 It's a self playing pong game for WindowMaker Dock.
-
 
 %description -l pl
 Program ten jest ca³kowicie bezu¿yteczny. Przeznaczony dla Doku
