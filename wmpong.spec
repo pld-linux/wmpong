@@ -2,7 +2,7 @@ Summary:	Self playing pong game for WindowMaker Dock
 Summary(pl):	Graj±cy sam ze sob± ping pong dla Doku WindowMakera
 Name:		wmpong
 Version:	0.3
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	ftp://ftp.windowmaker.org/pub/contrib/srcs/games/%{name}-%{version}-1.tar.gz
@@ -29,10 +29,10 @@ WindowMakera, graj±cy sam ze sob± ping-pong.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/DockApplets}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_desktopdir}/docklets}
 
 install %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
-#install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/docklets
 
 
 %clean
@@ -42,5 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc BUGS ChangeLog README TODO
 %attr(755,root,root) %{_bindir}/%{name}
-
-#%%{_applnkdir}/DockApplets/wmpong.desktop
+%{_desktopdir}/docklets/wmpong.desktop
