@@ -2,7 +2,7 @@ Summary:	Self playing pong game for WindowMaker Dock
 Summary(pl):	Graj±cy sam ze sob± ping pong dla Doku WindowMakera
 Name:		wmpong
 Version:	0.3
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Window Managers/Tools
 Source0:	ftp://ftp.windowmaker.org/pub/contrib/srcs/games/%{name}-%{version}-1.tar.gz
