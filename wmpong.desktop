@@ -1,7 +1,8 @@
 [Desktop Entry]
 Name=wmpong
 Comment=Self playing pong game
-Comment[pl]=Graj±cy siê sam ping-pong
+Comment[pl]=GrajÄ…cy siÄ™ sam ping-pong
 Exec=wmpong
 Terminal=0
 Type=Application
+# vi: encoding=utf-8
