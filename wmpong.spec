@@ -32,7 +32,7 @@ rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_applnkdir}/DockApplets} 
 
-install -s %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
+install %{name}/%{name} $RPM_BUILD_ROOT%{_bindir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/DockApplets
 
 gzip -9nf BUGS ChangeLog README TODO
