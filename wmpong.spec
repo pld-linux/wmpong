@@ -1,5 +1,5 @@
 Summary:	Self playing pong game for WindowMaker Dock
-Summary(pl.UTF-8):   Grający sam ze sobą ping pong dla Doku WindowMakera
+Summary(pl.UTF-8):	Grający sam ze sobą ping pong dla Doku WindowMakera
 Name:		wmpong
 Version:	0.3
 Release:	6
