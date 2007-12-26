@@ -5,7 +5,6 @@ Comment[pl]=Grający się sam ping-pong
 Exec=wmpong
 Terminal=false
 Type=Application
-Encoding=UTF-8
 Categories=Applet;
 NotShowIn=GNOME;KDE;
 # vi: encoding=utf-8
